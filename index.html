@@ -8,15 +8,52 @@
   <meta charset="utf-8">
   <title>Digital Clock</title>
   <link rel="stylesheet" href="css/style.css">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
 </head>
 
 <body>
-  <div id="center" class="wrapper">
+  <select id='theme'>
+    <option selected value="1">Theme 1</option>
+    <option value="2">Theme 2</option>
+    <option value="3">Theme 3</option>
+    <option value="4">Theme 4</option>
+  </select>
+
+  <div id="clock1" class="wrapper center">
     <div class="display">
       <div id="time"></div>
     </div>
   </div>
+
+  <div id="clock2" class="wrapper center">
+    <div class="display">
+      <div id="time2"></div>
+    </div>
+  </div>
+
+  <div id="clock3" class="wrapper center">
+    <div class="display">
+      <div id="time3"></div>
+    </div>
+  </div>
+
+  <div id="clock4" class="wrapper center">
+    <div class="display">
+      <div id="time4"></div>
+    </div>
+  </div>
+
+  
   <script>
+
+$(document).ready(function(){
+    $('#theme').on('change', function() {
+      this.value == '1' ? $("#clock1").show() : $("#clock1").hide();
+      this.value == '2' ? $("#clock2").show() : $("#clock2").hide();
+      this.value == '3' ? $("#clock3").show() : $("#clock3").hide();
+      this.value == '4' ? $("#clock4").show() : $("#clock4").hide();
+    });
+});
     setInterval(() => {
       const time = document.querySelector(".display #time");
       let date = new Date();
@@ -42,7 +79,12 @@
       if (hours < 10) {
         hours = "0" + hours;
       }
-      time.textContent = hours + ":" + minutes + ":" + seconds + ":" + millisec + " " + day_night;
+
+      let current_time = hours + ":" + minutes + ":" + seconds + ":" + millisec + " " + day_night;
+      time.textContent = current_time;
+      time2.textContent = current_time;
+      time3.textContent = current_time;
+      time4.textContent = current_time;
     });
   </script>
 </body>

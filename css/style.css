@@ -13,10 +13,8 @@ html,body{
   height: 100px;
   width: 420px;
   position: relative;
-  border: 8px double orange;
   border-radius: 10px;
   cursor: default;
-  animation: animate 1.5s linear infinite;
 }
 .wrapper .display{
   position: absolute;
@@ -30,6 +28,24 @@ html,body{
   border-radius: 6px;
   text-align: center;
 }
+#clock1{
+  border: 8px double orange;
+  animation: animate 1.5s linear infinite;
+}
+#clock2{
+  border: 8px dotted khaki;
+  animation: animate2 1.5s linear infinite;
+
+}
+#clock3{
+  border: 8px dashed gold;
+  animation: animate3 1.5s linear infinite;
+
+}
+#clock4{
+  border: 8px outset cyan;
+  animation: animate4 1.5s linear infinite;
+}
 .display #time{
   line-height: 85px;
   color: rgb(0, 0, 0);
@@ -41,7 +57,44 @@ html,body{
   -webkit-text-fill-color: transparent;
   animation: animate 1.5s linear infinite;
 }
-#center {
+
+.display #time2{
+  line-height: 85px;
+  color: rgb(0, 0, 0);
+  font-size: 50px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  background: linear-gradient(135deg, #14ffe9, #ffeb3b, #ff00e0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: animate2 1.5s linear infinite;
+}
+
+.display #time3{
+  line-height: 85px;
+  color: rgb(0, 0, 0);
+  font-size: 50px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  background: linear-gradient(135deg, #14ffe9, #ffeb3b, #ff00e0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: animate3 1.5s linear infinite;
+}
+
+.display #time4{
+  line-height: 85px;
+  color: rgb(0, 0, 0);
+  font-size: 50px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  background: linear-gradient(135deg, #14ffe9, #ffeb3b, #ff00e0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: animate4 1.5s linear infinite;
+}
+
+.center {
   margin: 150px auto;
   padding: 20px;
 }
@@ -49,4 +102,37 @@ html,body{
   100%{
     filter: hue-rotate(360deg);
   }
+}
+
+@keyframes animate2 {
+  100%{
+    filter: invert(75%);
+  }
+}
+
+@keyframes animate3 {
+  100%{
+    filter: opacity(25%);
+  }
+}
+
+@keyframes animate4 {
+  100%{
+    filter: contrast(200%);
+  }
+}
+
+/* filter: blur(5px);
+filter: brightness(0.4);
+filter: contrast(200%);
+filter: drop-shadow(16px 16px 20px blue);
+filter: grayscale(50%);
+filter: hue-rotate(90deg);
+filter: invert(75%);
+filter: opacity(25%);
+filter: saturate(30%);
+filter: sepia(60%); */
+
+#clock2, #clock3 ,#clock4{
+  display: none;
 }
