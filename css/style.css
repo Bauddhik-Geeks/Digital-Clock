@@ -13,7 +13,7 @@ html,body{
   height: 100px;
   width: 420px;
   position: relative;
-  border: 6px solid orange;
+  border: 8px double orange;
   border-radius: 10px;
   cursor: default;
   animation: animate 1.5s linear infinite;
@@ -40,6 +40,10 @@ html,body{
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: animate 1.5s linear infinite;
+}
+#center {
+  margin: 150px auto;
+  padding: 20px;
 }
 @keyframes animate {
   100%{
