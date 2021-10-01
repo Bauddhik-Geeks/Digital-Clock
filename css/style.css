@@ -51,3 +51,8 @@ html,body{
     filter: hue-rotate(360deg);
   }
 }
+#TimeZone{
+  border-color: white;
+  background-color: black;
+  color: white;
+}
