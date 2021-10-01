@@ -3,11 +3,8 @@
   padding: 0;
   font-family: 'Poppins', sans-serif;
 }
-html,body{
-  display: grid;
-  height: 100%;
-  place-items: center;
- background: #000;
+body{
+  background-image: url("https://images.wallpapersden.com/image/download/artistic-landscape-view_bGhlaGmUmZqaraWkpJRmbmdlrWZlbWU.jpg");
 }
 .wrapper{
   height: 100px;
@@ -42,7 +39,7 @@ html,body{
   animation: animate 1.5s linear infinite;
 }
 #center {
-  margin: 150px auto;
+  margin: 300px auto;
   padding: 20px;
 }
 @keyframes animate {
