@@ -5,7 +5,8 @@
 }
 html,body{
   background: #000;
-  
+  margin: 0px;
+  overflow: hidden;
 }
 .wrapper{
   height: 100px;
@@ -40,10 +41,10 @@ html,body{
   animation: animate 1.5s linear infinite;
 }
 .center{
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
 }
 
 @keyframes animate {
