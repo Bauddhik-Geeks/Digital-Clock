@@ -1,0 +1,24 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "Yash-sudo-web",
+      "name": "Yash-sudo-web",
+      "avatar_url": "https://avatars.githubusercontent.com/u/69838816?v=4",
+      "profile": "https://github.com/Yash-sudo-web",
+      "contributions": [
+        "code"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "Digital-Clock",
+  "projectOwner": "Bauddhik-Geeks",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "skipCi": true
+}
